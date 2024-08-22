@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-color: #000000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    background-color: #000000;
+    font-family: cursive;
+    font-size: 0px;
+    background-color: rgba(128, 128, 128, 0.5);
+
+}
+.photo-container {
+    padding: 40px;
+    position: relative; /* Make the container positionable */
+    left: 30px; /* Adjust this value to move the container to the right */
+}
+.text-box p {
+    font-size: 15px; /* Increased font size for the paragraph */
+    line-height: 1.5;
+    font-family: Courier, monospace;
+}
+.profile-photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 9px 30px rgb(255, 255, 255); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    box-shadow: 0 8px 45px rgb(255, 255, 255);
+}
+
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border-bottom: 2px solid hsl(117, 35%, 67%);
+}
